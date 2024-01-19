@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Anuncio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: yellow;
+            color: darkgreen;
+            font-family: Impact, Charcoal, sans-serif;
+        }
+        #inicio {
+            text-align: center;
+            margin-top: 20%;
+        }
+        h1 {
+            font-size: 120px;
+            margin-bottom: 20px;
+        }
+        button {
+            font-size: 50px;
+            padding: 10px 20px;
+            background-color: darkgreen;
+            color: yellow;
+            border: none;
+            cursor: pointer;
+    }
+        #Foto-container {
+            text-align: center; /* Centro la imagen horizontalmente */
+            margin-top: 20px; /* Ajusta según sea necesario */
+        }
+        #Foto-image {
+            max-width: 100%;
+            height: auto;
+        }
+        #anuncio {
+            text-align: center;
+            margin-top: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <div id="inicio">
+        <h1>ATENCIÓN!!!!!!!!!!!!!!!!!!!!!!!</h1>
+        <button onclick="scrollToAnuncio()">Click aquí</button>
+    </div>
+
+<div id="Foto-container">
+        <img id="Foto.jpg" src="Foto.jpg" alt="Foto">
+    </div>
+
+
+    <div id="anuncio">
+        <h1>FELICITACIONES!</h1>
+        <p>¡Eres el suertudo ganador de una noche especial el 23 de enero de 2024 a las 8 PM!</p>
+    </div>
+
+    <script>
+        function scrollToAnuncio() {
+            document.getElementById('anuncio').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
